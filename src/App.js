@@ -32,7 +32,6 @@ function App() {
       message: input,
       timestamp: firebase.firestore.FieldValue.serverTimestamp()
     });
-    // setMessages([...messages, { username: userName, message: input }]);
     setinput("");
   };
   return (
@@ -48,7 +47,6 @@ function App() {
           />
         </FormControl>
 
-        {/* <input value={input} onChange={(e) => setinput(e.target.value)} /> */}
         <Button
           disabled={!input}
           variant="contained"
